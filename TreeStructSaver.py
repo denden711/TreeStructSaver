@@ -2,13 +2,13 @@ import os
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 
-class DirectoryTreeApp:
+class TreeStructSaver:
     def __init__(self, root):
         self.root = root
-        self.root.title("Directory Structure Viewer")
+        self.root.title("TreeStructSaver")
         self.root.geometry("600x400")
 
-        # フレームの作成
+        # フレームの初期設定
         self.setup_frames()
         # ツリービューの設定
         self.setup_treeview()
@@ -109,5 +109,5 @@ class DirectoryTreeApp:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = DirectoryTreeApp(root)
+    app = TreeStructSaver(root)
     root.mainloop()
